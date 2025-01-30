@@ -1,0 +1,77 @@
+/* Estilo global */
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white; /* Asegura texto legible en fondo negro */
+}
+
+/* Contenedor del producto */
+.producto {
+    background-color: lightgray;
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Contenedor de la imagen */
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    
+    margin: 15px 0;
+    border: 3px solid #ddd;
+    background-color: white;
+}
+
+/* Imagen del producto */
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantiene proporciones de la imagen */
+}
+
+/* Modelo del producto */
+.modelo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Precio del producto */
+.precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2d89ef;
+    margin: 10px 0;
+}
+
+/* Descripción del producto */
+.descripcion {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Hover en el contenedor del producto */
+.producto:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6);
+}
